@@ -8,7 +8,7 @@ export default [
     color: 'white',
     weight: 10,
     location: 'manhattan',
-    notes: 'Annoying cats'
+    notes: 'Annoying cat'
   },
   {
     name: 'stu',
@@ -19,7 +19,7 @@ export default [
     color: 'brown',
     weight: 40,
     location: 'long island',
-    notes: 'Boring cats'
+    notes: 'Boring cat'
   },
   {
     name: 'pat',
@@ -30,7 +30,7 @@ export default [
     color: 'tan',
     weight: 30,
     location: 'queens',
-    notes: 'One cool cats'
+    notes: 'One cool cat'
   },
   {
     name: 'cody',
@@ -41,6 +41,6 @@ export default [
     color: 'black',
     weight: 20,
     location: 'brooklyn',
-    notes: 'Mean cats'
+    notes: 'Mean cat'
   }
 ]

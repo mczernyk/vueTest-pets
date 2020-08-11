@@ -8,7 +8,7 @@ export default [
     color: 'white',
     weight: 10,
     location: 'manhattan',
-    notes: 'Annoying dogs'
+    notes: 'Annoying dog'
   },
   {
     name: 'ted',
@@ -19,7 +19,7 @@ export default [
     color: 'brown',
     weight: 40,
     location: 'long island',
-    notes: 'Boring dogs'
+    notes: 'Boring dog'
   },
   {
     name: 'gary',
@@ -30,7 +30,7 @@ export default [
     color: 'tan',
     weight: 30,
     location: 'queens',
-    notes: 'Nothing but a hound dogs'
+    notes: 'Nothing but a hound dog'
   },
   {
     name: 'phil',
@@ -41,6 +41,6 @@ export default [
     color: 'black',
     weight: 20,
     location: 'brooklyn',
-    notes: 'Mean dogs'
+    notes: 'Mean dog'
   }
 ]

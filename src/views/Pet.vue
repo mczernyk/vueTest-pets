@@ -1,15 +1,20 @@
 <template>
   <div class="pet">
     <h1>{{ animal.name }} </h1>
-    <h1 v-if="species==='dogs'">
+    <h1 v-if="species==='dog'">
       <font-awesome-icon icon="dog" />
     </h1>
     <h1 v-else>
       <font-awesome-icon icon="cat" />
     </h1>
-    <p>{{ species }}<p>
-    <p>Age: {{ animal.age }} years old</p>
-    <p>Breed: {{ animal.breed }}</p>
+    <p><b>{{ species }}</b><p>
+    <h5><i>"{{ animal.notes }}"</i></h5>
+    <p><i>Age: </i>{{ animal.age }} years old</p>
+    <p><i>Breed: </i>{{ animal.breed }}</p>
+    <p><i>Gender: </i>{{ animal.gender }}</p>
+    <p><i>Color: </i>{{ animal.color }}</p>
+    <p><i>Weight: </i>{{ animal.weight }}</p>
+    <p><i>Location: </i>{{ animal.location }}</p>
   </div>
 </template>
 
@@ -24,7 +29,12 @@ export default {
       species: {},
       petData: {
         age: '',
-        breed: ''
+        breed: '',
+        gender: '',
+        color: '',
+        weight: 0,
+        location: '',
+        notes: ''
       }
     }
   },
