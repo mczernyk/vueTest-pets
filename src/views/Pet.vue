@@ -1,6 +1,13 @@
 <template>
   <div class="pet">
-    <h1>{{ animal.name }} ({{ species }})</h1>
+    <h1>{{ animal.name }} </h1>
+    <h1 v-if="species==='dogs'">
+      <font-awesome-icon icon="dog" />
+    </h1>
+    <h1 v-else>
+      <font-awesome-icon icon="cat" />
+    </h1>
+    <p>{{ species }}<p>
     <p>Age: {{ animal.age }} years old</p>
     <p>Breed: {{ animal.breed }}</p>
   </div>
@@ -14,7 +21,11 @@ export default {
   data () {
     return {
       animal: {},
-      species: {}
+      species: {},
+      petData: {
+        age: '',
+        breed: ''
+      }
     }
   },
   computed: {

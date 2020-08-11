@@ -2,45 +2,45 @@ export default [
   {
     name: 'ralph',
     breed: 'tabby',
-    species: 'cat',
+    species: 'cats',
     gender: 'female',
     age: 2,
     color: 'white',
     weight: 10,
     location: 'manhattan',
-    notes: 'Annoying cat'
+    notes: 'Annoying cats'
   },
   {
     name: 'stu',
     breed: 'bombay',
-    species: 'cat',
+    species: 'cats',
     gender: 'male',
     age: 3,
     color: 'brown',
     weight: 40,
     location: 'long island',
-    notes: 'Boring cat'
+    notes: 'Boring cats'
   },
   {
     name: 'pat',
     breed: 'tuxedo',
-    species: 'cat',
+    species: 'cats',
     gender: 'female',
     age: 4,
     color: 'tan',
     weight: 30,
     location: 'queens',
-    notes: 'One cool cat'
+    notes: 'One cool cats'
   },
   {
     name: 'cody',
     breed: 'mystery',
-    species: 'cat',
+    species: 'cats',
     gender: 'male',
     age: 5,
     color: 'black',
     weight: 20,
     location: 'brooklyn',
-    notes: 'Mean cat'
+    notes: 'Mean cats'
   }
 ]

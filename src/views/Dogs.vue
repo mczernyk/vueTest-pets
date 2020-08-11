@@ -1,6 +1,8 @@
 <template>
   <div class="pets">
     <h1>Dogs</h1>
+    <p>Available Dogs: {{ getAllDogs.length }}</p>
+
     <b-table striped hover :items="dogs">
       <template v-slot:cell(name)="data">
         <!-- `data.value` is the value after formatted by the Formatter -->
@@ -14,7 +16,7 @@
 
 <script>
 // import dogs from '@/data/dogs'
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 
 export default {
   data () {
@@ -23,6 +25,10 @@ export default {
   computed: {
     ...mapState([
       'dogs'
+    ]),
+    ...mapGetters([
+      'animalsCount',
+      'getAllDogs'
     ])
   }
 }
