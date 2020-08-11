@@ -113,7 +113,7 @@ export default {
       formData: {
         name: '',
         age: 0,
-        species: '',
+        species: null,
         breed: '',
         gender: '',
         color: '',
@@ -144,6 +144,7 @@ export default {
         pet: {
           name,
           age,
+          species,
           breed,
           gender,
           color,
@@ -166,6 +167,7 @@ export default {
         location: '',
         notes: ''
       }
+      this.species = null
     }
   }
 }
