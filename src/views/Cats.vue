@@ -1,6 +1,6 @@
 <template>
   <div class="pets">
-    <h1>Cats</h1>
+    <h1><font-awesome-icon icon="cat"/></h1>
     <p>Available Cats: {{ getAllCats.length }}</p>
 
     <b-table striped hover :items="cats">
