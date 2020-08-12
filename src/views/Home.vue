@@ -1,17 +1,27 @@
 <template>
   <div class="home">
-    <h1>Adopt a pet</h1>
-    <div>
-      <p>Available Pets: {{animalsCount }}</p>
-      <font-awesome-icon icon="dog"/>
-      {{ getAllDogs }}
-       <font-awesome-icon icon="cat"/>
-      {{ getAllCats }}
-    </div>
+    <div class="home-box">
+      <div>
+        <h1>Find your new pet today!</h1>
+        <img src="../../public/adopt.gif">
+        <div class="count-button-container">
+          <div class="count-home">
+            <p>Available Pets: {{animalsCount }}</p>
+            <div class="count-button-container">
+              <font-awesome-icon icon="dog"/>
+              {{ getAllDogs }}
+              <font-awesome-icon icon="cat"/>
+              {{ getAllCats }}
+            </div>
+          </div>
 
-    <button @click="togglePetForm" class="btn btn-primary">Add Pet</button>
+          <button @click="togglePetForm" class="btn btn-add-pet">Add A Pet</button>
+        </div>
+      </div>
+    </div>
     <!-- .prevent is like prevent default -->
-    <b-form @submit.prevent="handleSubmit" v-if="showPetForm">
+
+    <b-form @submit.prevent="handleSubmit" v-if="showPetForm" class="pet-form">
       <b-form-group id="input-group-1" label="Pet Name:" label-for="input-1">
         <b-form-input
           id="input-1"
@@ -94,8 +104,8 @@
         ></b-form-input>
       </b-form-group>
 
-      <b-button type="submit" variant="primary">Submit</b-button>
-      <b-button type="reset" variant="danger">Reset</b-button>
+      <b-button type="submit" variant="primary" class="btn btn-submit">Submit</b-button>
+      <b-button type="reset" variant="danger" class="btn btn-submit">Reset</b-button>
     </b-form>
   </div>
 </template>

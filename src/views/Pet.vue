@@ -1,20 +1,28 @@
 <template>
   <div class="pet">
-    <h1>{{ animal.name }} </h1>
-    <h1 v-if="species==='dog'">
-      <font-awesome-icon icon="dog" />
-    </h1>
-    <h1 v-else>
-      <font-awesome-icon icon="cat" />
-    </h1>
-    <p><b>{{ species }}</b><p>
-    <h5><i>"{{ animal.notes }}"</i></h5>
-    <p><i>Age: </i>{{ animal.age }} years old</p>
-    <p><i>Breed: </i>{{ animal.breed }}</p>
-    <p><i>Gender: </i>{{ animal.gender }}</p>
-    <p><i>Color: </i>{{ animal.color }}</p>
-    <p><i>Weight: </i>{{ animal.weight }}</p>
-    <p><i>Location: </i>{{ animal.location }}</p>
+    <div class="pet-container">
+      <div class="pet-left">
+        <div class="pet-img">
+          <h1>{{ animal.name }} </h1>
+          <h1 v-if="species==='dog'">
+            <font-awesome-icon icon="dog" />
+          </h1>
+          <h1 v-else>
+            <font-awesome-icon icon="cat" />
+          </h1>
+          <p><b>{{ species }}</b></p>
+        </div>
+        <h5><i>"{{ animal.notes }}"</i></h5>
+      </div>
+      <div class="pet-right">
+        <p><b>Age: </b>{{ animal.age }} years old</p>
+        <p><b>Breed: </b>{{ animal.breed }}</p>
+        <p><b>Gender: </b>{{ animal.gender }}</p>
+        <p><b>Color: </b>{{ animal.color }}</p>
+        <p><b>Weight: </b>{{ animal.weight }}</p>
+        <p><b>Location: </b>{{ animal.location }}</p>
+      </div>
+    </div>
   </div>
 </template>
 
