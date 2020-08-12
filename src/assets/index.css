@@ -9,7 +9,7 @@
 
 .count-button-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .count-home {
@@ -24,8 +24,14 @@
   background-color: white;
   padding: 10px;
   border-radius: 10px;
-  border: 2px black solid;
+  border: 2px #41B883 solid;
   width: 33%
+}
+
+.btn-add-pet:hover {
+  background-color: #41B883;
+  color: white
+
 }
 
 .pet-form {
