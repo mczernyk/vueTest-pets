@@ -3,6 +3,5 @@ import dogs from '../data/dogs'
 
 export default {
   cats: cats,
-  dogs: dogs,
-  pets: [...cats, ...dogs]
+  dogs: dogs
 }

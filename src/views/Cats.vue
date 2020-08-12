@@ -1,7 +1,7 @@
 <template>
   <div class="pets">
     <h1><font-awesome-icon icon="cat"/></h1>
-    <p>Available Cats: {{ getAllCats.length }}</p>
+    <p>Available Cats: {{ getAllCats }}</p>
 
     <b-table striped hover :items="cats">
       <template v-slot:cell(name)="data">

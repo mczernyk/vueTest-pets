@@ -4,9 +4,9 @@
     <div>
       <p>Available Pets: {{animalsCount }}</p>
       <font-awesome-icon icon="dog"/>
-      {{ getAllDogs.length }}
+      {{ getAllDogs }}
        <font-awesome-icon icon="cat"/>
-      {{ getAllCats.length }}
+      {{ getAllCats }}
     </div>
 
     <button @click="togglePetForm" class="btn btn-primary">Add Pet</button>
