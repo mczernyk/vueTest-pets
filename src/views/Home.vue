@@ -6,7 +6,7 @@
         <img src="../../public/adopt.gif">
         <div class="count-button-container">
           <div class="count-home">
-            <p>Available Pets: {{animalsCount }}</p>
+            <p><i>Available Pets:</i><b> {{animalsCount }} </b></p>
             <div class="count-button-container">
               <font-awesome-icon icon="dog"/>
               {{ getAllDogs }}
@@ -15,7 +15,7 @@
             </div>
           </div>
 
-          <button @click="togglePetForm" class="btn btn-add-pet">Add A Pet</button>
+          <button @click="togglePetForm" class="btn btn-add-pet"><b>Add</b> A Pet</button>
         </div>
       </div>
     </div>
