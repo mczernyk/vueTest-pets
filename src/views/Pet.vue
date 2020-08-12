@@ -19,7 +19,7 @@
         <p><b>Breed: </b>{{ animal.breed }}</p>
         <p><b>Gender: </b>{{ animal.gender }}</p>
         <p><b>Color: </b>{{ animal.color }}</p>
-        <p><b>Weight: </b>{{ animal.weight }}</p>
+        <p><b>Weight: </b>{{ animal.weight }} lbs</p>
         <p><b>Location: </b>{{ animal.location }}</p>
       </div>
     </div>
