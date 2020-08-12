@@ -2,7 +2,7 @@
   <div class="home">
     <div class="home-box">
       <div>
-        <h1>Find your new pet today!</h1>
+        <h1>Find your new <span class="emph">friend</span> today.</h1>
         <img src="../../public/adopt.gif">
         <div class="count-button-container">
           <div class="count-home">

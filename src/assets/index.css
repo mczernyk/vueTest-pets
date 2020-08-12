@@ -7,6 +7,11 @@
   margin-bottom: 40px;
 }
 
+.emph {
+  color: #41B883;
+  font-weight: bold;
+}
+
 .count-button-container {
   display: flex;
   justify-content: space-evenly;
