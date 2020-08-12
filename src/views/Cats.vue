@@ -1,8 +1,11 @@
 <template>
   <div class="pets">
-    <h1><font-awesome-icon icon="cat"/></h1>
-    <p>Available Cats: {{ getAllCats }}</p>
-
+    <div class="pets-header">
+      <div class="pets-img">
+        <h1><font-awesome-icon icon="cat"/></h1>
+        <p>Available Cats: {{ getAllCats }}</p>
+      </div>
+    </div>
     <b-table striped hover :items="cats">
       <template v-slot:cell(name)="data">
         <!-- `data.value` is the value after formatted by the Formatter -->
